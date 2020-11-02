@@ -1,0 +1,11 @@
+NAME,TYPE
+Clump_Thickness,numerical
+Cell_Size_Uniformity,numerical
+Cell_Shape_Uniformity,numerical
+Marginal_Adhesion,numerical
+Single_Epi_Cell_Size,numerical
+Bare_Nuclei,numerical
+Bland_Chromatin,numerical
+Normal_Nucleoli,numerical
+Mitoses,numerical
+target,target

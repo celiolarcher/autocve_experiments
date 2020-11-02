@@ -1,0 +1,16 @@
+NAME,TYPE
+age,numerical
+workclass,categorical
+fnlwgt,numerical
+education,categorical
+education-num,numerical
+marital-status,categorical
+occupation,categorical
+relationship,categorical
+race,categorical
+sex,categorical
+capital-gain,numerical
+capital-loss,numerical
+hours-per-week,numerical
+native-country,categorical
+target,target

@@ -1,0 +1,7 @@
+NAME,TYPE
+Sex,categorical
+DVRT,numerical
+Educational_level,categorical
+Prestige_score,numerical
+Type_school,categorical
+target,target

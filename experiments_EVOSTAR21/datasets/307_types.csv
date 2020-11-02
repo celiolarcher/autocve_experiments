@@ -1,0 +1,14 @@
+NAME,TYPE
+Speaker_Number,categorical
+Sex,categorical
+Feature_0,numerical
+Feature_1,numerical
+Feature_2,numerical
+Feature_3,numerical
+Feature_4,numerical
+Feature_5,numerical
+Feature_6,numerical
+Feature_7,numerical
+Feature_8,numerical
+Feature_9,numerical
+target,target

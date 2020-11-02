@@ -1,0 +1,6 @@
+NAME,TYPE
+DMFT.Begin,categorical
+DMFT.End,categorical
+Gender,categorical
+Ethnic,categorical
+target,target
