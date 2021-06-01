@@ -207,11 +207,11 @@ def execute_exp(d_id, id_trial, seed, subsample=1, METRIC='balanced_accuracy', F
             log_file.write("Problem: "+str(d_id)+", Trial: "+str(id_trial)+"\n\n")
 
         try:
-            submit=fit_predict(p.get_voting_ensemble_best_mask(),X_train,y_train,X_test)
+            submit=fit_predict(p.get_best_voting_ensemble(),X_train,y_train,X_test)
 
             if submit is not None:
                 with open('pipe_found.txt', 'a+') as log_file:
-                    log_file.write("AUTOCVE: "+str(p.get_voting_ensemble_best_mask().estimators)+"\n")
+                    log_file.write("AUTOCVE: "+str(p.get_best_voting_ensemble().estimators)+"\n")
 
                 with open('results.txt', 'a+') as results_out:
                     results_out.write(str(d_id)+";AUTOCVE;"+str(F_METRIC(y_test,submit))+";"+str(duration)+"\n")
@@ -221,7 +221,7 @@ def execute_exp(d_id, id_trial, seed, subsample=1, METRIC='balanced_accuracy', F
                 log_file.write("Experience error when fit pipeline in problem "+str(d_id)+" trial "+str(id_trial)+"\n")
                 
                 try:
-                    log_file.write(f"Pipeline found {p.get_voting_ensemble_best_mask().estimators} \n")
+                    log_file.write(f"Pipeline found {p.get_best_voting_ensemble().estimators} \n")
                 except Exception as e2:
                     log_file.write(f"Cannot access pipeline with error {e2} \n")
 
